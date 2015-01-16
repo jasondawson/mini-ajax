@@ -35,7 +35,7 @@ $('#addUser').on('click', function(e) {
 	return $.ajax({
 		method: 'POST',
 		url: 'http://reqr.es/api/users',
-		data: {"name": userName, "job": userJob},
+		data: {name: userName, job: userJob},
 		success: function(res) {
 			console.log(res);
 			$('#recentUser').html(
